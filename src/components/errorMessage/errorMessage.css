@@ -1,0 +1,8 @@
+.random-block img {
+    width: 100%;   
+}
+
+.textError {
+    display: block;
+    text-align: center;
+}

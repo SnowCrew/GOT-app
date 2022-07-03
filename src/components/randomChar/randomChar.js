@@ -65,11 +65,11 @@ export default class RandomChar extends Component {
         const content = !(loading || error) ? <View char={char}/> : null;
 
         return (
-            <div className="random-block rounded">
+            <>
                 {errorMessage}
                 {spinner}
                 {content}
-            </div>
+            </>
         );
         
     }
@@ -81,8 +81,8 @@ const View = ({char}) => {
 
     const {name, gender, born, died, culture, aliases} = char;
     return(
-        <>
-        <h4>Random Character: {name}</h4>
+        <div className='random-block'>
+            <h4>Random Character: {name}</h4>
             <ul className="list-group list-group-flush">
                 <li className="list-group-item d-flex justify-content-between">
                     <span className="term">Gender </span>
@@ -105,6 +105,6 @@ const View = ({char}) => {
                     <span>{aliases}</span>
                 </li>
             </ul>
-        </>
+        </div>
     )
 }

@@ -13,6 +13,9 @@ const HeaderTitle = styled.h3`
     font-size: 24px;
     color: #fff;
     margin: 0;
+    @media (max-width: 500px){
+        display: none;
+    }
 `;
 
 const HeaderLinks = styled.ul`
@@ -32,7 +35,7 @@ const Header = () => {
         <HeaderBlock>
             <HeaderTitle>
                 <Link to="/">
-                Game of Thrones DB
+                    <span>Game of Thrones DB</span>
                 </Link>
             </HeaderTitle>
             <HeaderLinks>

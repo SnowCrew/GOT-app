@@ -2,10 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './itemList.css';
 import Spinner from '../spinner';
 
-
-
-
-function ItemList ({getData, onItemSelected, renderItem}) {
+function ItemList ({getData, onItemSelected, renderItem, itemListOf}) {
 
     const [itemList, updateList] = useState([]);
         
@@ -40,9 +37,12 @@ function ItemList ({getData, onItemSelected, renderItem}) {
     const items = renderItems(itemList);
 
     return (
-        <ul className="item-list list-group">
-            {items}
-        </ul>
+        <div className='list-block'>
+            <h4>List of {itemListOf}:</h4>
+            <ul className="item-list list-group">
+                {items}
+            </ul>
+        </div>
     );
     
 }

@@ -51,6 +51,7 @@ class BookPage extends Component {
         return (
             // <RowBlock left={itemList} right={itemDetails}  />
             <ItemList 
+                itemListOf={"books"}
                 onItemSelected={(itemId) => {
                     this.props.history.push(itemId)
                 }}

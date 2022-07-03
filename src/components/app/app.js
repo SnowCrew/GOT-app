@@ -56,15 +56,12 @@ export default class App extends Component {
                                 {char}
                                 <button
                                     className='gradient-button'
-                                    onClick={this.toogleRandomChar}>Toggle random character</button>
+                                    onClick={this.toogleRandomChar}>Toggle random character panel</button>
                             </Col>
-                        </Row>
+                            </Row>
                         <Switch>
                             <Route path='/' exact component={() => (
-                            <>
-                                <h1>Welcome to GOT DB</h1>
-                                <Link to="/startingPage">Staring Video</Link>
-                            </>
+                            <></>
                             )} />
                             <Route path='/characters' component={CharacterPage}/>
                             <Route path='/houses' component={HousePage}/>

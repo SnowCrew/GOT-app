@@ -55,19 +55,19 @@ export default class App extends Component {
                             </Col>
                         </Row>
                         <Switch>
-                            <Route path='/GOT-app/' exact component={() => (
+                            <Route path='/' exact component={() => (
                                 <></>
                             )} />
-                            <Route path='/GOT-app/characters' component={CharacterPage} />
-                            <Route path='/GOT-app/houses' component={HousePage} />
-                            <Route path='/GOT-app/books' exact component={BookPage} />
-                            <Route path='/GOT-app/books/:id' render={
+                            <Route path='/characters' component={CharacterPage} />
+                            <Route path='/houses' component={HousePage} />
+                            <Route path='/books' exact component={BookPage} />
+                            <Route path='/books/:id' render={
                                 ({ match }) => {
                                     const { id } = match.params;
                                     return <BooksItem bookId={id} />
                                 }
                             } />
-                            <Route path='/GOT-app/startingPage' exact component={StartingPage} />
+                            <Route path='/startingPage' exact component={StartingPage} />
                             <Route component={NotFoundPage} />
                         </Switch>
                     </Container>

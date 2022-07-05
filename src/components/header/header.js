@@ -34,22 +34,22 @@ const Header = () => {
     return (
         <HeaderBlock>
             <HeaderTitle>
-                <Link to="/">
+                <Link to="/GOT-app/">
                     <span>Game of Thrones DB</span>
                 </Link>
             </HeaderTitle>
             <HeaderLinks>
                 <li>
-                    <Link to="/characters/">Characters</Link>
+                    <Link to="/GOT-app/characters/">Characters</Link>
                 </li>
                 <li>
-                    <Link to="/houses/">Houses</Link>
+                    <Link to="/GOT-app/houses/">Houses</Link>
                 </li>
                 <li>
-                    <Link to="/books/">Books</Link>   
+                    <Link to="/GOT-app/books/">Books</Link>
                 </li>
                 <li>
-                <Link to="/startingPage">Video</Link>
+                    <Link to="/GOT-app/startingPage">Video</Link>
                 </li>
             </HeaderLinks>
         </HeaderBlock>

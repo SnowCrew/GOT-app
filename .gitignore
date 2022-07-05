@@ -1,8 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+<<<<<<< HEAD
 #movies
 thewheel-got-acard_h1080p.mov 
 
+=======
+>>>>>>> master
 # dependencies
 /node_modules
 /.pnp
@@ -12,7 +15,11 @@ thewheel-got-acard_h1080p.mov
 /coverage
 
 # production
+<<<<<<< HEAD
 /build
+=======
+# /build
+>>>>>>> master
 
 # misc
 .DS_Store

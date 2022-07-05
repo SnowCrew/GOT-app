@@ -1,0 +1,36 @@
+.notFoundPage {
+ color: white;
+ text-align: center;
+ -webkit-animation: pulsing 3s infinite;
+ animation: pulsing 3s infinite;
+}
+
+@keyframes anime {
+    0% {
+        color: to right, midnightblue;
+        font-size: 18px;
+    }
+    33% {
+        color: white;
+        font-size: 20px;
+    }
+    66% {
+        color: royalblue;
+        font-size: 22x;
+    }
+    100% {
+        color: royalblue 50%;
+        font-size: 18px;
+    }
+}
+
+
+
+.link{
+    
+    /* background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%); */
+    animation: anime infinite 6s ease;
+  
+}
+
+

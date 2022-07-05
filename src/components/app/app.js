@@ -6,7 +6,7 @@ import './app.css';
 import ErrorMessage from '../errorMessage';
 import { CharacterPage, BookPage, HousePage, BooksItem, NotFoundPage, StartingPage } from '../Pages';
 import gotService from '../services/gotService';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Switch } from 'react-router-dom';
 export default class App extends Component {
 
     gotService = new gotService();
@@ -40,7 +40,7 @@ export default class App extends Component {
         }
 
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <div className='app'>
                     <Container>
                         <Header />
@@ -55,26 +55,26 @@ export default class App extends Component {
                             </Col>
                         </Row>
                         <Switch>
-                            <Route path='/' exact component={() => (
+                            <Route path='./' exact component={() => (
                                 <></>
                             )} />
-                            <Route path='/characters' component={CharacterPage} />
-                            <Route path='/houses' component={HousePage} />
-                            <Route path='/books' exact component={BookPage} />
-                            <Route path='/books/:id' render={
+                            <Route path='./characters' component={CharacterPage} />
+                            <Route path='./houses' component={HousePage} />
+                            <Route path='./books' exact component={BookPage} />
+                            <Route path='./books/:id' render={
                                 ({ match }) => {
                                     const { id } = match.params;
                                     return <BooksItem bookId={id} />
                                 }
                             } />
-                            <Route path='/startingPage' exact component={StartingPage} />
+                            <Route path='./startingPage' exact component={StartingPage} />
                             <Route component={NotFoundPage} />
                         </Switch>
                     </Container>
 
                 </div>
 
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 

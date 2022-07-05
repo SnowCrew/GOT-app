@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/GOT-app/static/css/main.d84b480d.css",
-    "main.js": "/GOT-app/static/js/main.7f39b664.js",
+    "main.js": "/GOT-app/static/js/main.a79852cc.js",
     "static/media/error.png": "/GOT-app/static/media/error.343a4a12522a3c039a67.png",
     "index.html": "/GOT-app/index.html",
     "main.d84b480d.css.map": "/GOT-app/static/css/main.d84b480d.css.map",
-    "main.7f39b664.js.map": "/GOT-app/static/js/main.7f39b664.js.map"
+    "main.a79852cc.js.map": "/GOT-app/static/js/main.a79852cc.js.map"
   },
   "entrypoints": [
     "static/css/main.d84b480d.css",
-    "static/js/main.7f39b664.js"
+    "static/js/main.a79852cc.js"
   ]
 }

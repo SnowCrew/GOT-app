@@ -40,7 +40,7 @@ export default class App extends Component {
         }
 
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <div className='app'>
                     <Container>
                         <Header />
@@ -72,7 +72,7 @@ export default class App extends Component {
                         </Switch>
                     </Container>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 
